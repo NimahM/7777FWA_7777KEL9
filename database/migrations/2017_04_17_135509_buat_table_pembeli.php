@@ -17,8 +17,6 @@ class BuatTablePembeli extends Migration
             $table->string('nama',50);
             $table->string('no_telp',18);
             $table->text('alamat');
-            $table->integer('pengguna_id',false,true);
-            $table->foreign('pengguna_id')->references('id')->on('pengguna')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }
